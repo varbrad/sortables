@@ -19,8 +19,8 @@ sort(...);
 **CJS**
 
 ```javascript
-const sortables = require('sortables');
-sortables.sort(...);
+const { sort } = require('sortables');
+sort(...);
 ```
 
 ## `sort(array, sortFunction)`
