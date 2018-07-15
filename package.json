@@ -1,6 +1,6 @@
 {
   "name": "sortables",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Utilities for sorting arrays",
   "main": "dist/bundle.js",
   "module": "src/index.js",
