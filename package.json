@@ -10,7 +10,7 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint \"src/**\"",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
