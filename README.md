@@ -6,7 +6,7 @@ Install using `npm` or `yarn`.
 
 ```
 npm i sortables --save
-yarn add sortablesa
+yarn add sortables
 ```
 
 The library exports all of it's functions as named exports.
