@@ -11,3 +11,9 @@ test('Sorts descending with a key', () => {
   const output = [7, 6, 5, 3, 3, 2, 1].map(i => ({ a: i }));
   expect(sort(input, descending('a'))).toEqual(output);
 });
+
+test('Sorts descending on a nested key', () => {
+  const input = [4, 4, 7, 2, 1].map(i => ({ a: { b: i } }));
+  const output = [7, 4, 4, 2, 1].map(i => ({ a: { b: i } }));
+  expect(sort(input, descending('a.b'))).toEqual(output);
+});
