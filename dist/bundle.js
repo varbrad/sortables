@@ -10,14 +10,26 @@
     return 0;
   };
 
+  var resolveKey = (object, key) => {
+    const fragments = key.split('.');
+    if (fragments.length === 1) return object[key];
+    let o = object;
+    while (fragments.length > 0) {
+      const fragment = fragments.shift();
+      if (o.hasOwnProperty(fragment)) o = o[fragment];
+      else return undefined;
+    }
+    return o;
+  };
+
   var ascending = key => {
     if (!key) return (a, b) => compare(a, b);
-    else return (a, b) => compare(a[key], b[key]);
+    else return (a, b) => compare(resolveKey(a, key), resolveKey(b, key));
   };
 
   var descending = key => {
     if (!key) return (a, b) => compare(a, b) * -1;
-    else return (a, b) => compare(a[key], b[key]) * -1;
+    else return (a, b) => compare(resolveKey(a, key), resolveKey(b, key)) * -1;
   };
 
   var hierarchical = (...sortFunctions) => {
