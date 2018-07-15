@@ -1,0 +1,14 @@
+parser: babel-eslint
+extends:
+  - eslint:recommended
+  - prettier
+plugins:
+  - prettier
+rules:
+  prettier/prettier:
+    - error
+    - singleQuote: true
+      semi: true
+  eqeqeq: 2
+  no-var: 2
+  prefer-const: 2

@@ -1,0 +1,28 @@
+{
+  "name": "sortables",
+  "version": "0.1.0",
+  "description": "Utilities for sorting arrays",
+  "main": "dist/bundle.js",
+  "module": "src/index.js",
+  "repository": "git@github.com:varbrad/sortables.git",
+  "author": "Brad Davies <varbrad@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint \"src/**\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jest": "^23.4.1",
+    "prettier": "^1.13.7",
+    "rollup": "^0.62.0"
+  }
+}
