@@ -4,8 +4,10 @@ A set of utility functions for sorting arrays.
 
 Install using `npm` or `yarn`.
 
-`npm i sortables --save`
-`yarn add sortables`
+```
+npm i sortables --save
+yarn add sortablesa
+```
 
 The library exports all of it's functions as named exports.
 
