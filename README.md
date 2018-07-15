@@ -1,5 +1,28 @@
 A set of utility functions for sorting arrays.
 
+# Install
+
+Install using `npm` or `yarn`.
+
+`npm i sortables --save`
+`yarn add sortables`
+
+The library exports all of it's functions as named exports.
+
+**ES6**
+
+```javascript
+import { sort } from 'sortables';
+sort(...);
+```
+
+**CJS**
+
+```javascript
+const sortables = require('sortables');
+sortables.sort(...);
+```
+
 ## `sort(array, sortFunction)`
 
 Returns a new array with the sort function having been applied.
