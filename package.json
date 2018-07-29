@@ -26,6 +26,6 @@
     "rollup": "^0.63.4"
   },
   "jest": {
-    "env": "node"
+    "testEnvironment": "node"
   }
 }
