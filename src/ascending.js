@@ -1,7 +1,11 @@
 import compare from './compare';
 import resolveKey from './resolveKey';
 
-export default key => {
-  if (!key) return (a, b) => compare(a, b);
-  else return (a, b) => compare(resolveKey(a, key), resolveKey(b, key));
+const fn = (a, b) => compare(a, b);
+
+export default (...params) => {
+  if (params.length === 2) return fn(params[0], params[1]);
+  const key = params[0];
+  if (!key) return fn;
+  return (a, b) => compare(resolveKey(a, key), resolveKey(b, key));
 };
