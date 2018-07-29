@@ -26,6 +26,8 @@
     "rollup": "^0.63.4"
   },
   "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage/",
     "testEnvironment": "node"
   }
 }
