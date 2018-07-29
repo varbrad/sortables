@@ -22,14 +22,24 @@
     return o;
   };
 
-  var ascending = key => {
-    if (!key) return (a, b) => compare(a, b);
-    else return (a, b) => compare(resolveKey(a, key), resolveKey(b, key));
+  const fn = (a, b) => compare(a, b);
+
+  var ascending = (...params) => {
+    if (params.length === 2) return fn(params[0], params[1]);
+    const key = params[0];
+    if (!key) return fn;
+    return (a, b) => compare(resolveKey(a, key), resolveKey(b, key));
   };
 
-  var descending = key => {
-    if (!key) return (a, b) => compare(a, b) * -1;
-    else return (a, b) => compare(resolveKey(a, key), resolveKey(b, key)) * -1;
+  const fn$1 = (a, b) => compare(a, b) * -1;
+
+  var descending = (...params) => {
+    // If directly passed as a compare fn
+    if (params.length === 2) return fn$1(params[0], params[1]);
+    // Otherwise, a key was passed, so use that
+    const key = params[0];
+    if (!key) return fn$1;
+    return (a, b) => compare(resolveKey(a, key), resolveKey(b, key)) * -1;
   };
 
   var hierarchical = (...sortFunctions) => {
