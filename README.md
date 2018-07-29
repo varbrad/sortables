@@ -1,3 +1,5 @@
+![Sortables Logo](https://i.imgur.com/1oYI78c.png)
+
 [![Travis (.org)](https://img.shields.io/travis/varbrad/sortables.svg?style=for-the-badge)](https://travis-ci.org/varbrad/sortables)
 [![Codecov](https://img.shields.io/codecov/c/github/varbrad/sortables.svg?style=for-the-badge)](https://codecov.io/gh/varbrad/sortables)
 
