@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/varbrad/sortables.svg?branch=master)](https://travis-ci.org/varbrad/sortables)
+
 A set of utility functions for sorting arrays.
 
 # Install
