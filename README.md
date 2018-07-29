@@ -1,4 +1,11 @@
-[![Build Status](https://travis-ci.org/varbrad/sortables.svg?branch=master)](https://travis-ci.org/varbrad/sortables)
+![Travis (.org)](https://img.shields.io/travis/varbrad/sortables.svg?style=for-the-badge)
+![Codecov](https://img.shields.io/codecov/c/github/varbrad/sortables.svg?style=for-the-badge)
+
+![David](https://img.shields.io/david/varbrad/sortables.svg?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/varbrad/sortables.svg?style=for-the-badge)
+
+![npm](https://img.shields.io/npm/v/sortables.svg?style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/sortables.svg?style=for-the-badge)
 
 A set of utility functions for sorting arrays.
 
