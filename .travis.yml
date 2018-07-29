@@ -4,4 +4,4 @@ node_js:
 install:
   - yarn global add codecov
 script:
-  - jest && codecov
+  - yarn jest && codecov
