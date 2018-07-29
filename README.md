@@ -25,15 +25,17 @@ The library exports all of it's functions as named exports.
 **ES6**
 
 ```javascript
-import { sort } from 'sortables';
-sort(...);
+import { sort, ascending } from 'sortables';
+const result = sort([2, 4, 1, 3], ascending);
+console.log(result); // [1, 2, 3, 4]
 ```
 
 **CJS**
 
 ```javascript
-const { sort } = require('sortables');
-sort(...);
+const { sort, descending } = require('sortables');
+const result = sort([2, 4, 1, 3], descending);
+console.log(result); // [4, 3, 2, 1]
 ```
 
 **Web via CDN**
@@ -43,7 +45,8 @@ sort(...);
 ```
 
 ```javascript
-sortables.sort(...);
+const result = sortables.sort([2, 4, 1, 4], sortables.ascending);
+console.log(result); // [1, 2, 3, 4]
 ```
 
 ## `sort(array, sortFunction)`
