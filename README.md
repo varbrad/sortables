@@ -36,6 +36,16 @@ const { sort } = require('sortables');
 sort(...);
 ```
 
+**Web via CDN**
+
+```html
+<script src="https://unpkg.com/sortables"></script>
+```
+
+```javascript
+sortables.sort(...);
+```
+
 ## `sort(array, sortFunction)`
 
 Returns a new array with the sort function having been applied.
