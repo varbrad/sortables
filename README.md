@@ -1,11 +1,11 @@
-![Travis (.org)](https://img.shields.io/travis/varbrad/sortables.svg?style=for-the-badge)
-![Codecov](https://img.shields.io/codecov/c/github/varbrad/sortables.svg?style=for-the-badge)
+[![Travis (.org)](https://img.shields.io/travis/varbrad/sortables.svg?style=for-the-badge)](https://travis-ci.org/varbrad/sortables)
+[![Codecov](https://img.shields.io/codecov/c/github/varbrad/sortables.svg?style=for-the-badge)](https://codecov.io/gh/varbrad/sortables)
 
-![David](https://img.shields.io/david/varbrad/sortables.svg?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/varbrad/sortables.svg?style=for-the-badge)
+[![David](https://img.shields.io/david/varbrad/sortables.svg?style=for-the-badge)](https://david-dm.org/varbrad/sortables)
+[![GitHub](https://img.shields.io/github/license/varbrad/sortables.svg?style=for-the-badge)](https://github.com/varbrad/sortables/blob/master/LICENSE)
 
-![npm](https://img.shields.io/npm/v/sortables.svg?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/sortables.svg?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/sortables.svg?style=for-the-badge)](https://www.npmjs.com/package/sortables?activeTab=versions)
+[![npm](https://img.shields.io/npm/dt/sortables.svg?style=for-the-badge)](https://www.npmjs.com/package/sortables)
 
 A set of utility functions for sorting arrays.
 
